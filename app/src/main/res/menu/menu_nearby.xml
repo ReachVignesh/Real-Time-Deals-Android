@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.conor.senan.activities.NearbyActivity">
+    <item android:id="@+id/action_as_list" android:title="View List"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu>

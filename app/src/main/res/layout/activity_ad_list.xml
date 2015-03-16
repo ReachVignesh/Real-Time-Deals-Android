@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.conor.senan.activities.AdListActivity"
+    android:background="#e1e1e1"
+    >
+
+
+
+        <ListView
+            android:id="@+id/ad_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:dividerHeight="15dp"
+            android:divider="#e1e1e1"
+            android:descendantFocusability="blocksDescendants"
+            android:scrollbars = "none"
+            />
+
+
+</RelativeLayout>

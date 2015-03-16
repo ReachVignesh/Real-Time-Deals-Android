@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.conor.senan.activities.NearbyActivity">
+
+
+    <fragment android:name= "com.google.android.gms.maps.MapFragment"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/nearby_map"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+    />
+
+    <LinearLayout
+        android:id="@+id/get_deal_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_border"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/countdown_display_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/countdown_timer"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:textSize="19sp"
+                android:gravity="center_horizontal|center_vertical"
+                />
+
+
+
+
+
+            <TextView
+                android:text="Get Deal!"
+                android:textColor="#ffffff"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:id="@+id/get_deal_button"
+                android:background="@color/mytheme_color"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash"
+     />
+
+</RelativeLayout>

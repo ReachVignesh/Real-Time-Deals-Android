@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mytheme_color" type="color">#F03131</item>
+    <color name="transparent">#00000000</color>
+</resources>

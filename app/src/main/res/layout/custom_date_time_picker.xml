@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Set Date"
+            android:id = "@+id/set_date_button"
+            android:enabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+        />
+
+        <Button
+            android:text="Set Time"
+            android:id="@+id/set_time_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            />
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:calendarViewShown="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    </TimePicker>
+
+    <Button
+        android:id="@+id/accept_date_change_button"
+        android:text="OK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
