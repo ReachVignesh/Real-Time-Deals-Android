@@ -133,9 +133,9 @@ public class SellerAdActivity extends FragmentActivity implements ConfirmDeleteA
         }else{
 
             if((bundle == null || !bundle.containsKey("id") || bundle.getInt("id") < 0)) {
-                this.originalId = bundle.getInt("id");
-            }else{
                 this.originalId = savedInstanceState.getInt("id");
+            }else{
+                this.originalId = bundle.getInt("id");
             }
         }
 
